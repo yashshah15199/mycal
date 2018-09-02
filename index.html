@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Simple Calculator</title>
+	</head>
+	<style>
+	#forms{margin-top: 50px;}
+	#text, #button{width: 250px; height: 30px;}
+	input{width: 80px; height: 30px; margin-top: 9px; padding: 2px; background: black; color: white;}
+	</style>
+	<body>
+	<center>
+		<form id="forms" name="formss">
+			<input type="text" name="text" id="text"/><br>
+			
+			<input type="button" value=" 1 " onclick="formss.text.value +='1'"/>
+			<input type="button" value=" 2 " onclick="formss.text.value +='2'"/>
+			<input type="button" value=" 3 " onclick="formss.text.value +='3'"/><br>
+			
+			<input type="button" value=" 4 " onclick="formss.text.value +='4'"/>
+			<input type="button" value=" 5 " onclick="formss.text.value +='5'"/>
+			<input type="button" value=" 6 " onclick="formss.text.value +='6'"/><br>
+			
+			<input type="button" value=" 7 " onclick="formss.text.value +='7'"/>
+			<input type="button" value=" 8 " onclick="formss.text.value +='8'"/>
+			<input type="button" value=" 9 " onclick="formss.text.value +='9'"/><br>
+			
+			<input type="button" value=" + " onclick="formss.text.value +='+'"/>
+			<input type="button" value=" - " onclick="formss.text.value +='-'"/>
+			<input type="button" value=" / " onclick="formss.text.value +='/'"/><br>
+			
+			<input type="button" value=" * " onclick="formss.text.value +='*'"/>
+			<input type="button" value=" 0 " onclick="formss.text.value +='0'"/>
+			<input type="button" value=" = " onclick="formss.text.value = eval(formss.text.value) "/><br>
+			
+			<input type="button" value="Clear All" id="button" onclick="formss.text.value = ' '"/>
+		</form>
+	</center>
+	</body>
+</html>
